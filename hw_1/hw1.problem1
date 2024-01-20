@@ -1,0 +1,360 @@
+Script started on Fri Jan 19 11:25:23 2024
+
+The default interactive shell is now zsh.
+To update your account to use zsh, please run `chsh -s /bin/zsh`.
+For more details, please visit https://support.apple.com/kb/HT208050.
+[?1034hbash-3.2$ echo 'Hello and welcome to the new quarter!'
+Hello and welcome to the new quarter!
+bash-3.2$ date
+Fri Jan 19 11:26:06 PST 2024
+bash-3.2$ echo $HOME
+/Users/lvyiqiao
+bash-3.2$ cd ~
+bash-3.2$ echo $HOME
+/Users/lvyiqiao
+bash-3.2$ cd ~
+bash-3.2$ ls
+408490414_hw2.cpp
+520-Assignments
+Applications
+CREATE EXTERNAL DATA SOURCE flightdata_b
+Caregiver.py
+ConnectionManager.py
+Creative Cloud Files
+Desktop
+Documents
+Downloads
+IdeaProjects
+Library
+Movies
+Music
+Patient.py
+Pictures
+Public
+Scheduler.py
+Sites
+Untitled-2.sql
+Untitled.ipynb
+Untitled1.ipynb
+Untitled2.ipynb
+Util.py
+Vaccine.py
+__init__.py
+aa.c
+anaconda3
+carriers.csv
+create-tables.sql
+eep520-wi24
+flights.csv
+hw2-q1.sql
+hw2-q2.sql
+hw2-q3.sql
+hw2-q4.sql
+hw2-q5.sql
+hw2-q6.sql
+hw2-q7.sql
+hw2-q8.sql
+hw2.db
+hw3-1.sql
+import-tables.sql
+matlab_crash_dump.13623-1
+matlab_crash_dump.14233-1
+matlab_crash_dump.14379-1
+months.csv
+python學習
+vaccine-scheduler-python-master
+week1
+weekdays.csv
+作業六
+半成品.cpp
+bash-3.2$ cd 520-Assignments
+bash-3.2$ cd hw_1
+bash-3.2$ ls
+hw1.problem1	secretfile
+bash-3.2$ mkdir temp
+bash-3.2$ mv temp temp_new
+bash-3.2$ cd temp_new
+bash-3.2$ touch file5
+bash-3.2$ mv file5 test
+bash-3.2$ cd ..
+bash-3.2$ rm -r temp_new
+bash-3.2$ echo 'It'\''s a secret!' > secretfile
+bash: secretfile: Permission denied
+bash-3.2$ chmod +w secretfile
+chmod: secretfile: No such file or directory
+bash-3.2$ echo 'It'\''s a secret!' > secretfile
+bash-3.2$ chmod a-w secretfile
+bash-3.2$ ls -l secretfile
+-r--r--r--  1 lvyiqiao  staff  15 Jan 19 11:31 secretfile
+bash-3.2$ cat >> secretfile
+bash: secretfile: Permission denied
+bash-3.2$ chmod +w secretfile
+bash-3.2$ cat >> secretfile
+aa  secret
+chmod -w secretfile
+^Dbash-3.2$ chmod -w secretfile
+bash-3.2$ ls
+hw1.problem1	secretfile
+bash-3.2$ mkdir complex
+bash-3.2$ cd complex
+bash-3.2$ nano complex.h
+[?1049h[1;24r[1;1H[J[7m  UW PICO 5.09                           New Buffer                             [27m[23;1H[K[24;1H[K[23;1H[7m^[27m[7mG[27m Get Help  [7m^[27m[7mO[27m WriteOut  [7m^[27m[7mR[27m Read File [7m^[27m[7mY[27m Prev Pg   [7m^[27m[7mK[27m Cut Text  [7m^[27m[7mC[27m Cur Pos   [K[24;1H[7m^[27m[7mX[27m Exit      [7m^[27m[7mJ[27m Justify   [7m^[27m[7mW[27m Where is  [7m^[27m[7mV[27m Next Pg   [7m^[27m[7mU[27m UnCut Text[7m^[27m[7mT[27m To Spell  [K[3;1H[22;1H                                                                                [22;35H[7m[ New file ][27m[1;1H[J[7m  UW PICO 5.09                        File: complex.h                           [27m[23;1H[K[24;1H[K[23;1H[7m^[27m[7mG[27m Get Help  [7m^[27m[7mO[27m WriteOut  [7m^[27m[7mR[27m Read File [7m^[27m[7mY[27m Prev Pg   [7m^[27m[7mK[27m Cut Text  [7m^[27m[7mC[27m Cur Pos   [K[24;1H[7m^[27m[7mX[27m Exit      [7m^[27m[7mJ[27m Justify   [7m^[27m[7mW[27m Where is  [7m^[27m[7mV[27m Next Pg   [7m^[27m[7mU[27m UnCut Text[7m^[27m[7mT[27m To Spell  [K[3;1H[1;35H[7mFile: complex.h                     Modified[27m[3;1H#ifndef[3;9HCOMPLEX_H[4;1H#define[4;9HCOMPLEX_H[5;1Hstruct[5;8HComplex[5;16H{[6;1H[6;2H[6;3H[6;4H[6;5Hdouble[6;12Hreal;[7;1H[7;2H[7;3H[7;4H[7;5Hdouble[7;12Him;[8;1H};[9;1H[10;1Hdouble[10;8Hadd(struct[10;19HComplex[10;27Ha,[10;30Hstruct[10;37HComplex[10;45Hb);[11;1Hstruct[11;8HComplex[11;16Hnegate(struct[11;30HComplex[11;38Ha);[12;1Hdouble[12;8Hmultiply(struct[12;24HComplex[12;32Ha,[12;35Hstruct[12;42HComplex[12;50Hb);[13;1Hdouble[13;8Hmagnitude(struct[13;25HComplex[13;33Ha);[14;1H[15;1H#endif[14;1H[13;7H[12;7H[11;7H[10;7H[9;1Hdouble add(struct Complex a, struct Complex b);[10;1Hstruct Complex negate(struct Complex a);[K[11;1Hdouble multiply(struct Complex a, struct Complex b);[12;9Hagnitude(struct Complex a);[K[13;1H[K[14;1H#endif[15;1H[K[8;3H[9;1H[K[10;1Hdouble add(struct Complex a, struct Complex b);[11;1Hstruct Complex negate(struct Complex a);[K[12;9Hultiply(struct Complex a, struct Complex b);[13;1Hdouble magnitude(struct Complex a);[14;1H[K[15;1H#endif[9;1Hdouble add(struct Complex a, struct Complex b);[10;1Hstruct Complex negate(struct Complex a);[K[11;1Hdouble multiply(struct Complex a, struct Complex b);[12;9Hagnitude(struct Complex a);[K[13;1H[K[14;1H#endif[15;1H[K[8;3H[9;3H[10;3H[11;3H[12;3H[13;1H[14;3H[15;1H[23;1H             [7mY[27m Yes                                                            [K[24;2H[7mC[27m Cancel    [7mN[27m No                                                             [K[22;1H                                                                                [22;1H[7mSave modified buffer (ANSWERING "No" WILL DESTROY CHANGES) ?                    [22;62H[27m[7mYes[27m[22;1H                                                                                [22;1H[7mFile Name to write :                                                            [22;22H[27m[23;1H[7m^[27m[7mG[27m Get Help  [7m^[27m[7mT[27m  To Files                                                     [K[24;14H[7mT[27m[7mA[27m[7mB[27m Complete                                                     [K[7m[22;22Hcomplex.h                                                  [22;31H[27m[22;1H                                                                                [22;34H[7m[ Writing... ][27m[22;1H                                                                                [22;32H[7m[ Wrote 12 lines ][27m[23;1H[K[24;1H[K[?1049lbash-3.2$ nano complex.c
+[?1049h[1;24r[1;1H[J[7m  UW PICO 5.09                           New Buffer                             [27m[23;1H[K[24;1H[K[23;1H[7m^[27m[7mG[27m Get Help  [7m^[27m[7mO[27m WriteOut  [7m^[27m[7mR[27m Read File [7m^[27m[7mY[27m Prev Pg   [7m^[27m[7mK[27m Cut Text  [7m^[27m[7mC[27m Cur Pos   [K[24;1H[7m^[27m[7mX[27m Exit      [7m^[27m[7mJ[27m Justify   [7m^[27m[7mW[27m Where is  [7m^[27m[7mV[27m Next Pg   [7m^[27m[7mU[27m UnCut Text[7m^[27m[7mT[27m To Spell  [K[3;1H[22;1H                                                                                [22;35H[7m[ New file ][27m[1;1H[J[7m  UW PICO 5.09                        File: complex.c                           [27m[23;1H[K[24;1H[K[23;1H[7m^[27m[7mG[27m Get Help  [7m^[27m[7mO[27m WriteOut  [7m^[27m[7mR[27m Read File [7m^[27m[7mY[27m Prev Pg   [7m^[27m[7mK[27m Cut Text  [7m^[27m[7mC[27m Cur Pos   [K[24;1H[7m^[27m[7mX[27m Exit      [7m^[27m[7mJ[27m Justify   [7m^[27m[7mW[27m Where is  [7m^[27m[7mV[27m Next Pg   [7m^[27m[7mU[27m UnCut Text[7m^[27m[7mT[27m To Spell  [K[3;1H[1;35H[7mFile: complex.c                     Modified[27m[3;1H#include[3;10H<math.h>[4;1H#include[4;10H"complex.h"[5;1H[6;1Hdouble[6;8Hadd(struct[6;19HComplex[6;27Ha,[6;30Hstruct[6;37HComplex[6;45Hb)[6;48H{[7;1H[7;2H[7;3H[7;4H[7;5H//[7;8H實[K現[K加[K法[K[8;1H}[8;1H[7;16H[7;14H[K[7;12H[K[7;10H[K[7;8H[K[7;7H[7;6H [7;6H[7;5H [7;5H[7;4H[7;3H[7;2H[7;1H}[8;1H [6;49H[7;1H [8;1H}[7;1H1+1[7;3H [7;3H[7;2H [7;2H[7;1H [7;1H}[8;1H [6;49H[7;2H[8;1Hstruct[8;8HComplex[8;16Hnegate(struct[8;30HComplex[8;38Ha)[8;41H{[9;1H[9;2H[9;3H[9;4H[9;5H//[9;8H實[K現[K否[K定[K[10;1H}[9;2H[9;1H[10;1H[9;16H[9;14H[K[9;12H[K[9;10H[K[9;8H[K[9;7H[9;6H [9;6H[9;5H [9;5H[9;4H[10;2H[11;1H[12;1Hdouble[12;8Hmultiply(struct[12;24HComplex[12;32Ha,[12;35Hstruct[12;42HComplex[12;50Hb)[12;53H{[13;1H[13;2H[13;3H[13;4H[13;5H//[13;8H實[K現[K乘[K法[K[14;1H}[14;1H[13;16H[13;14H[K[13;12H[K[13;10H[K[13;8H[K[13;7H[13;6H [13;6H[13;5H [13;5H[13;4H[13;3H[13;2H[13;1H}[14;1H [12;54H[13;2H[14;1Hdouble[14;8Hmagnitude(struct[14;25HComplex[14;33Ha)[14;36H{[15;1H[15;2H[15;3H[15;4H[15;5H//[15;8H使[K用[K[15;13Hsqrt[15;18H函[K數[K計[K算[K[15;27Hmagnitude[16;1H[16;2H[16;3H[16;4H[16;5Hreturn[16;12Hsqrt(a.real[16;24H*[16;26Ha.real[16;33H+[16;35Ha.im[16;40H*[16;42Ha.im);[17;1H}[17;1H[16;1H[15;1H[16;1H[15;36H[15;35H [15;35H[15;34H [15;34H[15;33H [15;33H[15;32H [15;32H[15;31H [15;31H[15;30H [15;30H[15;29H [15;29H[15;28H [15;28H[15;27H [15;27H[15;26H[15;24H[K[15;22H[K[15;20H[K[15;18H[K[15;17H[15;16H [15;16H[15;15H [15;15H[15;14H [15;14H[15;13H [15;13H[15;12H[15;10H[K[15;8H[K[15;7H[15;6H [15;6H[15;5H [15;5H[15;4H[15;3H[15;2H[15;1H[15;5Hreturn sqrt(a.real * a.real + a.im * a.im);[16;1H}[K[17;1H [14;37H[15;37H[16;2H[17;1H[23;1H             [7mY[27m Yes                                                            [K[24;2H[7mC[27m Cancel    [7mN[27m No                                                             [K[22;1H                                                                                [22;1H[7mSave modified buffer (ANSWERING "No" WILL DESTROY CHANGES) ?                    [22;62H[27m[7mYes[27m[22;1H                                                                                [22;1H[7mFile Name to write :                                                            [22;22H[27m[23;1H[7m^[27m[7mG[27m Get Help  [7m^[27m[7mT[27m  To Files                                                     [K[24;14H[7mT[27m[7mA[27m[7mB[27m Complete                                                     [K[7m[22;22Hcomplex.c                                                  [22;31H[27m[22;1H                                                                                [22;34H[7m[ Writing... ][27m[22;1H                                                                                [22;32H[7m[ Wrote 14 lines ][27m[23;1H[K[24;1H[K[?1049lbash-3.2$ nano unit_test.c
+[?1049h[1;24r[1;1H[J[7m  UW PICO 5.09                           New Buffer                             [27m[23;1H[K[24;1H[K[23;1H[7m^[27m[7mG[27m Get Help  [7m^[27m[7mO[27m WriteOut  [7m^[27m[7mR[27m Read File [7m^[27m[7mY[27m Prev Pg   [7m^[27m[7mK[27m Cut Text  [7m^[27m[7mC[27m Cur Pos   [K[24;1H[7m^[27m[7mX[27m Exit      [7m^[27m[7mJ[27m Justify   [7m^[27m[7mW[27m Where is  [7m^[27m[7mV[27m Next Pg   [7m^[27m[7mU[27m UnCut Text[7m^[27m[7mT[27m To Spell  [K[3;1H[22;1H                                                                                [22;35H[7m[ New file ][27m[1;1H[J[7m  UW PICO 5.09                       File: unit_test.c                          [27m[23;1H[K[24;1H[K[23;1H[7m^[27m[7mG[27m Get Help  [7m^[27m[7mO[27m WriteOut  [7m^[27m[7mR[27m Read File [7m^[27m[7mY[27m Prev Pg   [7m^[27m[7mK[27m Cut Text  [7m^[27m[7mC[27m Cur Pos   [K[24;1H[7m^[27m[7mX[27m Exit      [7m^[27m[7mJ[27m Justify   [7m^[27m[7mW[27m Where is  [7m^[27m[7mV[27m Next Pg   [7m^[27m[7mU[27m UnCut Text[7m^[27m[7mT[27m To Spell  [K[3;1H[1;34H[7mFile: unit_test.c                    Modified[27m[3;1H#include[3;10H<stdio.h>[4;1H#include[4;10H"complex.h"[5;1H[6;1Hint[6;5Hmain()[6;12H{[7;1H[7;2H[7;3H[8;1H[8;2H[8;3H[8;4H[8;5Hstruct[8;12HComplex[8;20Ha[8;22H=[8;24H{1.0,[8;30H2.0};[9;1H[9;2H[9;3H[9;4H[9;5Hstruct[9;12HComplex[9;20Hb[9;22H=[9;24H{3.0,[9;30H4.0};[10;1H[11;1H[11;2H[11;3H[11;4H[11;5Hprintf("Addition:[11;23H%f\n",[11;30Hadd(a,[11;37Hb));[12;1H[12;2H[12;3H[12;4H[12;5Hprintf("Negation:[12;23H%f[12;26H+[12;28H%fi\n",[12;36Hnegate(a).real,[12;52Hnegate(a).im);[13;1H[13;2H[13;3H[13;4H[13;5Hprintf("Multiplication:[13;29H%f\n",[13;36Hmultiply(a,[13;48Hb));[14;1H[14;2H[14;3H[14;4H[14;5Hprintf("Magnitude:[14;24H%f\n",[14;31Hmagnitude(a));[15;1H[15;2H[15;3H[15;4H[15;5Hreturn[15;12H0;[16;1H}[23;1H             [7mY[27m Yes                                                            [K[24;2H[7mC[27m Cancel    [7mN[27m No                                                             [K[22;1H                                                                                [22;1H[7mSave modified buffer (ANSWERING "No" WILL DESTROY CHANGES) ?                    [22;62H[27m[7mYes[27m[22;1H                                                                                [22;1H[7mFile Name to write :                                                            [22;22H[27m[23;1H[7m^[27m[7mG[27m Get Help  [7m^[27m[7mT[27m  To Files                                                     [K[24;14H[7mT[27m[7mA[27m[7mB[27m Complete                                                     [K[7m[22;22Hunit_test.c                                                [22;33H[27m[22;1H                                                                                [22;34H[7m[ Writing... ][27m[22;1H                                                                                [22;32H[7m[ Wrote 14 lines ][27m[23;1H[K[24;1H[K[?1049lbash-3.2$ nano Makefile
+[?1049h[1;24r[1;1H[J[7m  UW PICO 5.09                           New Buffer                             [27m[23;1H[K[24;1H[K[23;1H[7m^[27m[7mG[27m Get Help  [7m^[27m[7mO[27m WriteOut  [7m^[27m[7mR[27m Read File [7m^[27m[7mY[27m Prev Pg   [7m^[27m[7mK[27m Cut Text  [7m^[27m[7mC[27m Cur Pos   [K[24;1H[7m^[27m[7mX[27m Exit      [7m^[27m[7mJ[27m Justify   [7m^[27m[7mW[27m Where is  [7m^[27m[7mV[27m Next Pg   [7m^[27m[7mU[27m UnCut Text[7m^[27m[7mT[27m To Spell  [K[3;1H[22;1H                                                                                [22;35H[7m[ New file ][27m[1;1H[J[7m  UW PICO 5.09                         File: Makefile                           [27m[23;1H[K[24;1H[K[23;1H[7m^[27m[7mG[27m Get Help  [7m^[27m[7mO[27m WriteOut  [7m^[27m[7mR[27m Read File [7m^[27m[7mY[27m Prev Pg   [7m^[27m[7mK[27m Cut Text  [7m^[27m[7mC[27m Cur Pos   [K[24;1H[7m^[27m[7mX[27m Exit      [7m^[27m[7mJ[27m Justify   [7m^[27m[7mW[27m Where is  [7m^[27m[7mV[27m Next Pg   [7m^[27m[7mU[27m UnCut Text[7m^[27m[7mT[27m To Spell  [K[3;1H[1;36H[7mFile: Makefile                     Modified[27m[3;1HCC[3;4H=[3;6Hgcc[4;1HCFLAGS[4;8H=[4;10H-Wall[5;1H[6;1Hcomplex:[6;10Hmain.c[6;17Hcomplex.c[6;27Hunit_test.c[7;1H[7;2H[7;3H[7;4H[7;5H$(CC)[7;11H$(CFLAGS)[7;21H-o[7;24Hcomplex[7;32Hmain.c[7;39Hcomplex.c[7;49Hunit_test.c[7;61H-lm[8;1H[9;1Hclean:[10;1H[10;2H[10;3H[10;4H[10;5Hrm[10;8H-f[10;11Hcomplex[11;1H[23;1H             [7mY[27m Yes                                                            [K[24;2H[7mC[27m Cancel    [7mN[27m No                                                             [K[22;1H                                                                                [22;1H[7mSave modified buffer (ANSWERING "No" WILL DESTROY CHANGES) ?                    [22;62H[27m[7mYes[27m[22;1H                                                                                [22;1H[7mFile Name to write :                                                            [22;22H[27m[23;1H[7m^[27m[7mG[27m Get Help  [7m^[27m[7mT[27m  To Files                                                     [K[24;14H[7mT[27m[7mA[27m[7mB[27m Complete                                                     [K[7m[22;22HMakefile                                                   [22;30H[27m[22;1H                                                                                [22;34H[7m[ Writing... ][27m[22;1H                                                                                [22;32H[7m[ Wrote 8 lines ][27m[23;1H[K[24;1H[K[?1049lbash-3.2$ nano main.c
+[?1049h[1;24r[1;1H[J[7m  UW PICO 5.09                           New Buffer                             [27m[23;1H[K[24;1H[K[23;1H[7m^[27m[7mG[27m Get Help  [7m^[27m[7mO[27m WriteOut  [7m^[27m[7mR[27m Read File [7m^[27m[7mY[27m Prev Pg   [7m^[27m[7mK[27m Cut Text  [7m^[27m[7mC[27m Cur Pos   [K[24;1H[7m^[27m[7mX[27m Exit      [7m^[27m[7mJ[27m Justify   [7m^[27m[7mW[27m Where is  [7m^[27m[7mV[27m Next Pg   [7m^[27m[7mU[27m UnCut Text[7m^[27m[7mT[27m To Spell  [K[3;1H[22;1H                                                                                [22;35H[7m[ New file ][27m[1;1H[J[7m  UW PICO 5.09                          File: main.c                            [27m[23;1H[K[24;1H[K[23;1H[7m^[27m[7mG[27m Get Help  [7m^[27m[7mO[27m WriteOut  [7m^[27m[7mR[27m Read File [7m^[27m[7mY[27m Prev Pg   [7m^[27m[7mK[27m Cut Text  [7m^[27m[7mC[27m Cur Pos   [K[24;1H[7m^[27m[7mX[27m Exit      [7m^[27m[7mJ[27m Justify   [7m^[27m[7mW[27m Where is  [7m^[27m[7mV[27m Next Pg   [7m^[27m[7mU[27m UnCut Text[7m^[27m[7mT[27m To Spell  [K[3;1H[1;37H[7mFile: main.c                      Modified[27m[3;1H#include[3;10H"complex.h"[4;1H[5;1Hint[5;5Hmain()[5;12H{[6;1H[7;1H[7;2H[7;3H[7;4H[7;5Hreturn[7;12H0;[8;1H}[23;1H             [7mY[27m Yes                                                            [K[24;2H[7mC[27m Cancel    [7mN[27m No                                                             [K[22;1H                                                                                [22;1H[7mSave modified buffer (ANSWERING "No" WILL DESTROY CHANGES) ?                    [22;62H[27m[7mYes[27m[22;1H                                                                                [22;1H[7mFile Name to write :                                                            [22;22H[27m[23;1H[7m^[27m[7mG[27m Get Help  [7m^[27m[7mT[27m  To Files                                                     [K[24;14H[7mT[27m[7mA[27m[7mB[27m Complete                                                     [K[7m[22;22Hmain.c                                                     [22;28H[27m[22;1H                                                                                [22;34H[7m[ Writing... ][27m[22;1H                                                                                [22;32H[7m[ Wrote 6 lines ][27m[23;1H[K[24;1H[K[?1049lbash-3.2$ make complex
+Makefile:5: *** missing separator.  Stop.
+bash-3.2$ ./complex
+bash: ./complex: No such file or directory
+bash-3.2$ make complex
+Makefile:9: *** missing separator.  Stop.
+bash-3.2$ make complex
+Makefile:9: *** missing separator.  Stop.
+bash-3.2$ make complex
+Makefile:5: *** missing separator.  Stop.
+bash-3.2$ bash-3.2$ make complex
+bash: bash-3.2$: command not found
+bash-3.2$ Makefile:5: *** missing separator.  Stop.
+bash: Makefile:5:: command not found
+bash-3.2$ bash-3.2$ 
+bash: bash-3.2$: command not found
+bash-3.2$ make complex
+Makefile:9: *** missing separator.  Stop.
+bash-3.2$ make complex
+gcc -Wall -o complex main.c complex.c unit_test.c -lm
+[1mcomplex.c:5:1: [0m[0;1;35mwarning: [0m[1mnon-void function does not return a value [-Wreturn-type][0m
+}
+[0;1;32m^
+[0m[1mcomplex.c:8:1: [0m[0;1;35mwarning: [0m[1mnon-void function does not return a value [-Wreturn-type][0m
+}
+[0;1;32m^
+[0m[1mcomplex.c:11:1: [0m[0;1;35mwarning: [0m[1mnon-void function does not return a value [-Wreturn-type][0m
+}
+[0;1;32m^
+[0m3 warnings generated.
+duplicate symbol '_main' in:
+    /var/folders/6m/ldj227x128z9nf8fwdz38nc00000gn/T/main-c024b8.o
+    /var/folders/6m/ldj227x128z9nf8fwdz38nc00000gn/T/unit_test-c1b8d5.o
+ld: 1 duplicate symbol for architecture arm64
+clang: [0;1;31merror: [0m[1mlinker command failed with exit code 1 (use -v to see invocation)[0m
+make: *** [complex] Error 1
+bash-3.2$ ./complex
+bash: ./complex: No such file or directory
+bash-3.2$ make complex
+make: *** No rule to make target `main.c', needed by `complex'.  Stop.
+bash-3.2$ 
+bash-3.2$ stop
+bash: stop: command not found
+bash-3.2$ make complex
+make: *** No rule to make target `main.c', needed by `complex'.  Stop.
+bash-3.2$ bash-3.2$ make complex
+bash: bash-3.2$: command not found
+bash-3.2$ make: *** No rule to make target `main.c', needed by `complex'.  Stop. [A[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[K.
+> bash-3.2$ bash-3.2$ make complex
+> make: *** No rule to make target `main.c', needed by `complex'.  Stop.
+> bash-3.2$ ./complex
+> make complex
+> ./complex
+> bash: unexpected EOF while looking for matching ``'
+bash: syntax error: unexpected end of file
+bash-3.2$ ls
+Makefile	complex.c	complex.h	main.c		unit_test.c
+bash-3.2$ make complex
+gcc -Wall -o complex main.c complex.c unit_test.c -lm
+[1mcomplex.c:5:1: [0m[0;1;35mwarning: [0m[1mnon-void function does not return a value [-Wreturn-type][0m
+}
+[0;1;32m^
+[0m[1mcomplex.c:8:1: [0m[0;1;35mwarning: [0m[1mnon-void function does not return a value [-Wreturn-type][0m
+}
+[0;1;32m^
+[0m[1mcomplex.c:11:1: [0m[0;1;35mwarning: [0m[1mnon-void function does not return a value [-Wreturn-type][0m
+}
+[0;1;32m^
+[0m3 warnings generated.
+duplicate symbol '_main' in:
+    /var/folders/6m/ldj227x128z9nf8fwdz38nc00000gn/T/main-aae32f.o
+    /var/folders/6m/ldj227x128z9nf8fwdz38nc00000gn/T/unit_test-209a53.o
+ld: 1 duplicate symbol for architecture arm64
+clang: [0;1;31merror: [0m[1mlinker command failed with exit code 1 (use -v to see invocation)[0m
+make: *** [complex] Error 1
+bash-3.2$ make complex
+gcc -Wall -o complex main.c complex.c unit_test.c -lm
+duplicate symbol '_main' in:
+    /var/folders/6m/ldj227x128z9nf8fwdz38nc00000gn/T/main-fcba30.o
+    /var/folders/6m/ldj227x128z9nf8fwdz38nc00000gn/T/unit_test-03fcc1.o
+ld: 1 duplicate symbol for architecture arm64
+clang: [0;1;31merror: [0m[1mlinker command failed with exit code 1 (use -v to see invocation)[0m
+make: *** [complex] Error 1
+bash-3.2$ make complex
+gcc -Wall -o complex main.c complex.c unit_test.c -lm
+duplicate symbol '_main' in:
+    /var/folders/6m/ldj227x128z9nf8fwdz38nc00000gn/T/main-73488e.o
+    /var/folders/6m/ldj227x128z9nf8fwdz38nc00000gn/T/unit_test-eb7447.o
+ld: 1 duplicate symbol for architecture arm64
+clang: [0;1;31merror: [0m[1mlinker command failed with exit code 1 (use -v to see invocation)[0m
+make: *** [complex] Error 1
+bash-3.2$ gcc -Wall -o complex main.c complex.c unit_test.c -lm
+clang: [0;1;31merror: [0m[1mno such file or directory: 'main.c'[0m
+bash-3.2$ duplicate symbol '_main' in:
+bash: duplicate: command not found
+bash-3.2$     /var/folders/6m/ldj227x128z9nf8fwdz38nc00000gn/T/main-73488e.o
+bash: /var/folders/6m/ldj227x128z9nf8fwdz38nc00000gn/T/main-73488e.o: No such file or directory
+bash-3.2$     /var/folders/6m/ldj227x128z9nf8fwdz38nc00000gn/T/unit_test-eb7447. o
+bash: /var/folders/6m/ldj227x128z9nf8fwdz38nc00000gn/T/unit_test-eb7447.o: No such file or directory
+bash-3.2$ ld: 1 duplicate symbol for architecture arm64
+bash: ld:: command not found
+bash-3.2$ clang: error: linker command failed with exit code 1 (use -v to see in vocation)
+bash: syntax error near unexpected token `('
+bash-3.2$ make: *** [complex] Error 1
+bash: make:: command not found
+bash-3.2$ gcc -Wall -o complex main.c complex.c unit_test.c -lm
+bash-3.2$ duplicate symbol '_main' in:
+bash: duplicate: command not found
+bash-3.2$     /var/folders/6m/ldj227x128z9nf8fwdz38nc00000gn/T/main-73488e.o
+bash: /var/folders/6m/ldj227x128z9nf8fwdz38nc00000gn/T/main-73488e.o: No such file or directory
+bash-3.2$     /var/folders/6m/ldj227x128z9nf8fwdz38nc00000gn/T/unit_test-eb7447. o
+bash: /var/folders/6m/ldj227x128z9nf8fwdz38nc00000gn/T/unit_test-eb7447.o: No such file or directory
+bash-3.2$ ld: 1 duplicate symbol for architecture arm64
+bash: ld:: command not found
+bash-3.2$ clang: error: linker command failed with exit code 1 (use -v to see in vocation)
+bash: syntax error near unexpected token `('
+bash-3.2$ make: *** [complex] Error 1
+bash: make:: command not found
+bash-3.2$ make complex
+make: `complex' is up to date.
+bash-3.2$ make complex
+make: `complex' is up to date.
+bash-3.2$ make complex
+gcc -Wall -o complex main.c complex.c unit_test.c -lm
+bash-3.2$ ./complex
+bash-3.2$ ./complex
+bash-3.2$ unit_test.c
+bash: unit_test.c: command not found
+bash-3.2$ unit_test.c[K[K
+bash: unit_test: command not found
+bash-3.2$ ls
+Makefile	complex.c	main.c
+complex		complex.h	unit_test.c
+bash-3.2$ com[K[K[K/[K./unit_test.c
+bash: ./unit_test.c: Permission denied
+bash-3.2$ ./unit_test.c[K[K
+bash: ./unit_test: No such file or directory
+bash-3.2$ ./unit_test
+bash: ./unit_test: No such file or directory
+bash-3.2$ gcc -Wall -o unit_test unit_test.c complex.c -lm
+bash-3.2$ ./unit_test
+Addition: 4.000000
+Negation: -1.000000 + -2.000000i
+Multiplication: -5.000000
+Magnitude: 2.236068
+bash-3.2$ ./unit_test
+Addition: 4.000000
+Negation: -1.000000 + -2.000000i
+Multiplication: -5.000000
+Magnitude: 2.236068
+bash-3.2$ ./unit_testgcc -Wall -o unit_test unit_test.c complex.c -lm
+[1munit_test.c:16:1: [0m[0;1;35mwarning: [0m[1mtype specifier missing, defaults to 'int' [-Wimplicit-int][0m
+namespace {
+[0;1;32m^
+[0m[1munit_test.c:16:10: [0m[0;1;31merror: [0m[1mexpected ';' after top level declarator[0m
+namespace {
+[0;1;32m         ^
+[0m[0;32m         ;
+[0m1 warning and 1 error generated.
+bash-3.2$ gcc -Wall -o unit_test unit_test.c complex.c -lm
+[1munit_test.c:16:1: [0m[0;1;35mwarning: [0m[1mtype specifier missing, defaults to 'int' [-Wimplicit-int][0m
+namespace {
+[0;1;32m^
+[0m[1munit_test.c:16:10: [0m[0;1;31merror: [0m[1mexpected ';' after top level declarator[0m
+namespace {
+[0;1;32m         ^
+[0m[0;32m         ;
+[0m1 warning and 1 error generated.
+bash-3.2$ gcc -Wall -o unit_test unit_test.c complex.c -lm
+[1munit_test.c:4:1: [0m[0;1;35mwarning: [0m[1mtype specifier missing, defaults to 'int' [-Wimplicit-int][0m
+namespace {
+[0;1;32m^
+[0m[1munit_test.c:4:10: [0m[0;1;31merror: [0m[1mexpected ';' after top level declarator[0m
+namespace {
+[0;1;32m         ^
+[0m[0;32m         ;
+[0m1 warning and 1 error generated.
+bash-3.2$ gcc -Wall -o unit_test unit_test.c complex.c -lm
+[1munit_test.c:3:10: [0m[0;1;31mfatal error: [0m[1m'gtest/gtest.h' file not found[0m
+#include "gtest/gtest.h"
+[0;1;32m         ^~~~~~~~~~~~~~~
+[0m1 error generated.
+bash-3.2$ gcc -Wall -o unit_test unit_test.c complex.c -lm
+[1munit_test.c:16:1: [0m[0;1;35mwarning: [0m[1mtype specifier missing, defaults to 'int' [-Wimplicit-int][0m
+namespace {
+[0;1;32m^
+[0m[1munit_test.c:16:10: [0m[0;1;31merror: [0m[1mexpected ';' after top level declarator[0m
+namespace {
+[0;1;32m         ^
+[0m[0;32m         ;
+[0m1 warning and 1 error generated.
+bash-3.2$ makefile
+bash: makefile: command not found
+bash-3.2$ make
+g++ -std=c++17 -g -I. -c -o build/complex.o complex.c
+clang: [0;1;35mwarning: [0m[1mtreating 'c' input as 'c++' when in C++ mode, this behavior is deprecated [-Wdeprecated][0m
+make: *** No rule to make target `unit_tests.c', needed by `build/unit_tests.o'.  Stop.
+bash-3.2$ makefilegcc -Wall -o unit_test unit_test.c complex.c -lm[C[C[C[C[C[C[C[C[C[C./unit_test[K
+Addition: 4.000000
+Negation: -1.000000 + -2.000000i
+Multiplication: -5.000000
+Magnitude: 2.236068
+bash-3.2$ ./unit_test[7Pmakefile[K
+make: *** No rule to make target `unit_tests.c', needed by `build/unit_tests.o'.  Stop.
+bash-3.2$ make[Kmake./unit_test
+Addition: 4.000000
+Negation: -1.000000 + -2.000000i
+Multiplication: -5.000000
+Magnitude: 2.236068
+bash-3.2$ ./unit_test[7Pmake./unit_test[7Pmakefilegcc -Wall -o unit_test unit_test.c complex.c -lm
+[1munit_test.c:16:1: [0m[0;1;35mwarning: [0m[1mtype specifier missing, defaults to 'int' [-Wimplicit-int][0m
+namespace {
+[0;1;32m^
+[0m[1munit_test.c:16:10: [0m[0;1;31merror: [0m[1mexpected ';' after top level declarator[0m
+namespace {
+[0;1;32m         ^
+[0m[0;32m         ;
+[0m1 warning and 1 error generated.
+bash-3.2$ gcc -Wall -o unit_test unit_test.c complex.c -lm
+[1munit_test.c:16:1: [0m[0;1;31merror: [0m[1munknown type name 'namespace'[0m
+namespace test_complex {
+[0;1;32m^
+[0m[1munit_test.c:16:23: [0m[0;1;31merror: [0m[1mexpected ';' after top level declarator[0m
+namespace test_complex {
+[0;1;32m                      ^
+[0m[0;32m                      ;
+[0m2 errors generated.
+bash-3.2$ gcc -Wall -o unit_test unit_test.c complex.c -lm
+[1munit_test.c:3:1: [0m[0;1;31merror: [0m[1munknown type name 'using'[0m
+using namespace std;
+[0;1;32m^
+[0m[1munit_test.c:3:16: [0m[0;1;31merror: [0m[1mexpected ';' after top level declarator[0m
+using namespace std;
+[0;1;32m               ^
+[0m[0;32m               ;
+[0m[1munit_test.c:16:1: [0m[0;1;35mwarning: [0m[1mtype specifier missing, defaults to 'int' [-Wimplicit-int][0m
+namespace {
+[0;1;32m^
+[0m[1munit_test.c:16:10: [0m[0;1;31merror: [0m[1mexpected ';' after top level declarator[0m
+namespace {
+[0;1;32m         ^
+[0m[0;32m         ;
+[0m1 warning and 3 errors generated.
+bash-3.2$ make
+make: *** No rule to make target `unit_tests.c', needed by `build/unit_tests.o'.  Stop.
+bash-3.2$ make
+g++ -std=c++17 -g -I. -c -o complex.o complex.c
+clang: [0;1;35mwarning: [0m[1mtreating 'c' input as 'c++' when in C++ mode, this behavior is deprecated [-Wdeprecated][0m
+make: *** No rule to make target `unit_tests.c', needed by `unit_tests.o'.  Stop.
+bash-3.2$ makegcc -Wall -o unit_test unit_test.c complex.c -lm
+bash-3.2$ gcc -Wall -o unit_test unit_test.c complex.c -lm[C[C[C[C[C[C[C[C[C[Cmake[Kgcc -Wall -o unit_test unit_test.c complex.c -lm[C[C[C[C[C[C[C[C[C[C./unit_test[K[7Pmake./unit_test
+Addition: 4.000000
+Negation: -1.000000 + -2.000000i
+Multiplication: -5.000000
+Magnitude: 2.236068
+bash-3.2$ 
