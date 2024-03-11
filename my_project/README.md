@@ -36,14 +36,24 @@ The goal is to slide numbered tiles on a grid to combine them and create a tile 
 
 Game Start
 
+
 ![Times Up](https://github.com/yichiaolu/520-Assignments/raw/main/my_project/start.png)
+
+
 Game Play
 
+
 ![Times Up](https://github.com/yichiaolu/520-Assignments/raw/main/my_project/running.png)
+
+
 Lose.
 
+
 ![Times Up](https://github.com/yichiaolu/520-Assignments/raw/main/my_project/lose.png)
+
+
 Time's up.
+
 
 ![Times Up](https://github.com/yichiaolu/520-Assignments/raw/main/my_project/times.up.png)
 
