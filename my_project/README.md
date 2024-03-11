@@ -27,10 +27,21 @@ The goal is to slide numbered tiles on a grid to combine them and create a tile 
     "docker build -t my_project."
 6. Run Docker container:
 
-    "docker run -v /path/to/your/my_project:/source -it klavins/ecep520:cppenv bash"
+    "docker run -p 8888:8765 -v $PWD:/source -it klavins/enviro:v1.1 bash"
 7. Run the project in the Docker container:
 
     "./main"
+
+## Game Images
+
+Game Start
+![Times Up](https://github.com/yichiaolu/520-Assignments/raw/main/my_project/start.png)
+Game Play
+![Times Up](https://github.com/yichiaolu/520-Assignments/raw/main/my_project/running.png)
+Lose.
+![Times Up](https://github.com/yichiaolu/520-Assignments/raw/main/my_project/lose.png)
+Time's up.
+![Times Up](https://github.com/yichiaolu/520-Assignments/raw/main/my_project/times.up.png)
 
 
 ## Usage
