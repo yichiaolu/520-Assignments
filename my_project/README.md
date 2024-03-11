@@ -11,11 +11,21 @@ The goal is to slide numbered tiles on a grid to combine them and create a tile 
 - Managing user input and updating the game state accordingly.
 - Implementing a timer to limit the duration of the game.
 
-## Installation
+## Installation And Run
 1. Make sure you have a C++ compiler installed on your system.
 2. Clone this repository to your local machine.
+    git clone https://github.com/yichiaolu/520-Assignments.git
 3. Navigate to the project directory.
+    cd 520-Assignments/my_project
 4. Compile the code using the following command: g++ -o main main.cc -std=c++11
+5. Build Docker container:
+    docker build -t my_project.
+6. Run Docker container:
+    docker run -v /path/to/your/my_project:/source -it klavins/ecep520:cppenv bash
+7. Run the project in the Docker container:
+    ./main
+
+
 ## Usage
 1. Run the compiled executable using the following command:
 ./main\
@@ -28,8 +38,7 @@ The goal is to slide numbered tiles on a grid to combine them and create a tile 
 
 ## Acknowledgements
 - This project was inspired by the original 2048 game created by Gabriele Cirulli.
+- Parts of the code and ideas in this project were adapted from [JackHCC's GitHub repository](https://github.com/JackHCC).
 
-## License
-This project is licensed under the MIT License - see the [LICENSE](LICENSE) file for details.
 
 }
