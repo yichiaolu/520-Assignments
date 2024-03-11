@@ -13,8 +13,8 @@ The goal is to slide numbered tiles on a grid to combine them and create a tile 
 
 ## Installation And Run
 1. Make sure you have a C++ compiler installed on your system.
-2. Clone this repository to your local machine.
-    git clone https://github.com/yichiaolu/520-Assignments.git
+2. Clone this repository to your local machine：
+    "git clone https://github.com/yichiaolu/520-Assignments.git"
 3. Navigate to the project directory.
     cd 520-Assignments/my_project
 4. Compile the code using the following command: g++ -o main main.cc -std=c++11
